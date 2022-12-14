@@ -1,0 +1,61 @@
+﻿@model List<CepDados>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    
+    td{
+        border: 1px solid black;
+        text-align:center;
+        width:20vw;
+    }
+    th{
+        text-align:center;
+        border:1px solid black;
+        align-content:center;
+    }
+    tr{
+        text-align:center;
+    }
+</style>
+
+@using (Html.BeginForm("Index", "Home", method: FormMethod.Post))
+{
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+
+        <label>CEP</label>
+        <input type="number" name="cep" />
+        <label>Logradouro</label>
+        <input type="text" name="logradouro" />
+        <button type="submit"> Buscar Dados</button>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
+}
+@if (Model != null && Model.Count > 0)
+{
+    <div>
+        <table>
+            <tr>
+                <th>CEP</th>
+                <th>Logradouro</th>
+                <th>Cidade</th>
+                <th>Bairro</th>
+            </tr>
+            <tbody>
+                @foreach (var item in Model.ToList())
+                {
+                    <tr>
+                        <td>@item.CEP</td>
+                        <td>@item.Logradouro</td>
+                        <td>@item.Localidade</td>
+                        <td>@item.Bairro</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

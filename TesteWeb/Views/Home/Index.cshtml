@@ -1,0 +1,38 @@
+﻿@model List<TesteCandidato.ManipulaDadosCep>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@Html.BeginForm("Index","Home",method:FormMethod.Post){
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+
+        <label>CEP</label>
+        <input type="number" name="cep" />
+        <input type="text"  name="logradouro" />
+        <button type="submit"> Buscar Dados</button>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
+}
+    @if(@Model != null){
+    <div>
+            <table>
+                <tr>
+                    <th>CEP</th>
+                    <th>Logradouro</th>
+                    <th>Cidade</th>
+                    <th>Bairro</th>
+                </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.CEP</td>
+                    <td>@item.Logradouro</td>
+                    <td>@item.Localidade</td>
+                    <td>@item.Bairro</td>
+                </tr>
+            }
+            </table>
+    </div>
+}

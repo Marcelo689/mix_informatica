@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteCandidatoTriangulo", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteCandidatoTDD", "TesteCandidatoTDD\TesteCandidatoTDD.csproj", "{EA158C8E-E0FA-43BC-A1F6-BAE6AB2641DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteWeb", "TesteWeb\TesteWeb.csproj", "{C55BDCC3-CD6E-4CE9-A05F-400D0A70B8FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteMVCCEP", "TesteMVCCEP\TesteMVCCEP.csproj", "{3B447250-8642-4200-88BA-B280D8962C19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{EA158C8E-E0FA-43BC-A1F6-BAE6AB2641DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA158C8E-E0FA-43BC-A1F6-BAE6AB2641DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA158C8E-E0FA-43BC-A1F6-BAE6AB2641DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C55BDCC3-CD6E-4CE9-A05F-400D0A70B8FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C55BDCC3-CD6E-4CE9-A05F-400D0A70B8FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C55BDCC3-CD6E-4CE9-A05F-400D0A70B8FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C55BDCC3-CD6E-4CE9-A05F-400D0A70B8FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B447250-8642-4200-88BA-B280D8962C19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B447250-8642-4200-88BA-B280D8962C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B447250-8642-4200-88BA-B280D8962C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B447250-8642-4200-88BA-B280D8962C19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
